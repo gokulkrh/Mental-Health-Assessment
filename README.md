@@ -2,8 +2,8 @@
 <a href="https://colab.research.google.com/drive/17sgdF6EZ6wWmrprG9jAwcpvGIu0iwk8J#scrollTo=F0IwAO4mas2V">Colab notebook</a>
 
 ## Introduction
-According to recent studies, PTSD is the most common mental health problem faced by returning troops. The symptoms include difficulty concentrating, lack of interest/apathy, feelings of detachment, loss of appetite, hypervigilance, exaggerated startle response, and sleep disturbances.<br>
-This project provides a method for the military to assess the mental health of soldiers and take responsible actions for them if they in a dark place.
+This project provides a method for the military to assess the mental health of soldiers and take responsible actions for them if they in a dark place.<br>
+According to recent studies, PTSD is the most common mental health problem faced by returning troops. The symptoms include difficulty concentrating, lack of interest/apathy, feelings of detachment, loss of appetite, hypervigilance, exaggerated startle response, and sleep disturbances.
 
 ## Dataset
 The dataset used in this project is obtained by combining 3 seperate datasets.
