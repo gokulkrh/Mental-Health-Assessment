@@ -26,4 +26,4 @@ The person is asked a series of questions and their responses are tokenized into
 The sentences are passed into the model to identify the emotions in each and a percentage composition is calculated for each emotion.<br>
 The generate_report function creates a report according to the percentage values.<br><br>
 Here is a sample response and the report generated.<br><br>
-<img src="sample_response.png" alt="response" width="350" height="450">
+<img src="sample_response.png" alt="response" width="450" height="550">
