@@ -22,6 +22,7 @@ def preprocess_training_data(df):
     df['text'] = df['text'].str.replace("^https?:\/\/.*[\r\n]*", " ")
     df['text'] = df['text'].apply(lambda x: " ".join(x.lower() for x in x.split()))  # changing text to lowercase
     df['text'] = df['text'].str.replace('[^\w\s]', " ")  # removing punctuation and digits
+    df['text'] = df['text'].str.replace('[0-9]', ' ')
     df['text'] = df['text'].apply(lambda x: " ".join(x for x in x.split() if x not in stop))  # removing stopwords
     df['text'] = df['text'].apply(lambda x: " ".join([Word(word).lemmatize() for word in x.split()]))  # lemmatizing words
     df['text'] = df['text'].apply(lambda x: " ".join(de_repeat(x) for x in x.split()))  # removing repeated characters in words
@@ -32,6 +33,7 @@ def preprocess_training_data(df):
 def preprocess_input_data(text):
     text[0] = text[0].apply(lambda x: " ".join(x.lower() for x in x.split()))  # preprocessing text for testig and vectorizing
     text[0] = text[0].str.replace('[^\w\s]', " ")
+    text[0] = text[0].str.replace('[0-9]', ' ')
     text[0] = text[0].apply(lambda x: " ".join(x for x in x.split() if x not in stop))
     text[0] = text[0].apply(lambda x: " ".join([Word(word).lemmatize() for word in x.split()]))
     text[0] = text[0].apply(lambda x: " ".join(de_repeat(x) for x in x.split()))
